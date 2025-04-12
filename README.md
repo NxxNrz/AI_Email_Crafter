@@ -88,11 +88,6 @@ Brian Lee,Goodwater Capital,Consumer Tech
 ---
 
 ## 🧪 Example Email Output
-
-| VC Name     | Firm            | Subject                             | Body                |
-|-------------|------------------|--------------------------------------|----------------------|
-| Alice Zhang | Hustle Fund      | Satu Energy: AI-Powered Innovation   | Dear Alice...        |
-
 You can expand and edit before saving to Gmail drafts.
 ![{F0F6606E-98E3-4708-B167-18425FA1905E}](https://github.com/user-attachments/assets/1d983189-709a-433f-8772-f2d8f39d79dc)
 ![{C313E1C3-0F59-44FF-9B8E-3FC2DF3E4BE5}](https://github.com/user-attachments/assets/80e59fc2-5162-4db1-b78b-6fda3da576aa)
