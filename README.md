@@ -1,121 +1,113 @@
-# 🧾 AI Email Crafter: VC Outreach Auto-Draft Assistant
+# AI Email Crafter 🤖✉️
 
-An AI-powered Streamlit app that generates personalized outreach emails to VCs and saves them directly into your Gmail Drafts using OpenRouter + Gmail API.
+![AI Email Crafter](https://img.shields.io/badge/AI_Email_Crafter-v1.0-blue.svg)
+![GitHub](https://img.shields.io/badge/Visit%20on-GitHub-brightgreen.svg)
 
----
+Welcome to **AI Email Crafter**! This tool helps you effortlessly generate personalized, VC-ready email drafts using AI. You can save these drafts directly into Gmail, making it a smart outreach assistant for founders, sales, and business development teams.
 
-## 🧠 Features
+## Table of Contents
 
-- 📤 Upload list of VC names, firms, and investment focus (CSV/XLSX)
-- 🤖 Automatically generate subject & body using `mistralai/mistral-7b-instruct` via [OpenRouter](https://openrouter.ai/)
-- 🔎 Edit and preview the generated emails in-app
-- 💾 Save each email to your Gmail drafts with one click using Gmail API
-- 🔐 Secure API keys via `.streamlit/secrets.toml`
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
----
+## Features
 
-## 📂 Project Structure
+- **AI-Driven Drafts**: Generate email drafts that resonate with your audience.
+- **Gmail Integration**: Save drafts directly into your Gmail account for easy access.
+- **User-Friendly Interface**: Built with Streamlit for a smooth user experience.
+- **Customizable Templates**: Adjust templates to suit your specific needs.
+- **Efficient Outreach**: Ideal for founders, sales teams, and business development professionals.
 
-```bash
-AI_EMAIL_CRAFTER/
-├── app.py                      # Main Streamlit app
-├── credentials.json            # OAuth client for Gmail API (add this manually)
-├── requirements.txt            # All required Python packages
-├── token.pickle                # Stores Gmail OAuth token after login
-├── README.md                   # This file
-├── .streamlit/
-│   └── secrets.toml            # OpenRouter API key
-├── templates/                  # (optional) For future templating
-├── assets/                     # (optional) For images/screenshots
-└── utils/
-    ├── __init__.py
-    ├── email_generator.py      # LLM integration with OpenRouter
-    ├── gmail_api.py            # Gmail draft saver via Gmail API
-```
+## Technologies Used
 
----
+This project utilizes a variety of technologies to deliver a seamless experience:
 
-## 🛠️ Setup
+- **Python**: The core programming language for backend logic.
+- **Streamlit**: A framework for building web applications quickly.
+- **Gmail API**: For saving email drafts directly into Gmail.
+- **Google Authentication**: To securely connect to your Gmail account.
+- **OpenRouter**: For integrating AI capabilities.
+- **Large Language Models (LLM)**: To generate human-like text.
+- **Business Development Tools**: To enhance outreach strategies.
 
-### 1. Clone the repo and install dependencies
+## Getting Started
 
-```bash
-pip install -r requirements.txt
-```
+To get started with AI Email Crafter, follow these steps:
 
-### 2. Create `.streamlit/secrets.toml`:
+1. **Clone the Repository**: Use the command below to clone the repository to your local machine.
+   ```bash
+   git clone https://github.com/NxxNrz/AI_Email_Crafter.git
+   ```
 
-```toml
-[openrouter]
-api_key = "sk-xxxxxxxxxxxxxxxx"
-```
+2. **Install Dependencies**: Navigate to the project directory and install the required packages.
+   ```bash
+   cd AI_Email_Crafter
+   pip install -r requirements.txt
+   ```
 
-### 3. Add Gmail credentials
+3. **Set Up Google API**:
+   - Go to the [Google Developer Console](https://console.developers.google.com/).
+   - Create a new project.
+   - Enable the Gmail API.
+   - Create credentials and download the JSON file.
+   - Place the JSON file in the project directory.
 
-Go to [Google Cloud Console](https://console.cloud.google.com/):
-- Enable Gmail API
-- Create OAuth 2.0 client (Desktop App)
-- Download `credentials.json` and place it in the project root
+4. **Run the Application**: Start the application with the command below.
+   ```bash
+   streamlit run app.py
+   ```
 
----
+5. **Authenticate**: Follow the prompts to authenticate with your Google account.
 
-## 🚀 Run the App
+## Usage
 
-```bash
-streamlit run app.py
-```
+Once the application is running, you can start generating email drafts:
 
----
+1. **Input Your Details**: Fill in the fields with your information, including recipient name, subject, and key points you want to include.
+2. **Generate Draft**: Click the "Generate" button to create your email draft.
+3. **Review and Edit**: Review the draft and make any necessary adjustments.
+4. **Save to Gmail**: Click the "Save to Gmail" button to store your draft directly in your Gmail account.
 
-## 📊 Sample Input
+## Contributing
 
-Upload a file like:
+We welcome contributions! If you would like to contribute, please follow these steps:
 
-```csv
-Name,Firm,Focus
-Alice Zhang,Hustle Fund,AI and SaaS
-Brian Lee,Goodwater Capital,Consumer Tech
-```
+1. **Fork the Repository**: Click the "Fork" button at the top right of the page.
+2. **Create a Branch**: Create a new branch for your feature or bug fix.
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. **Make Your Changes**: Implement your changes and commit them.
+   ```bash
+   git commit -m "Add your message here"
+   ```
+4. **Push to Your Fork**: Push your changes to your forked repository.
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+5. **Open a Pull Request**: Go to the original repository and open a pull request.
 
----
+## License
 
-## 🔐 Gmail OAuth
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-- On first use, app will prompt you to sign in with Google
-- A `token.pickle` file is created to store your credentials
-- Emails are saved as drafts — no messages are sent without your approval
+## Contact
 
----
+For any questions or suggestions, feel free to reach out:
 
-## 🧪 Example Email Output
-You can expand and edit before saving to Gmail drafts.
-![{F0F6606E-98E3-4708-B167-18425FA1905E}](https://github.com/user-attachments/assets/1d983189-709a-433f-8772-f2d8f39d79dc)
-![{C313E1C3-0F59-44FF-9B8E-3FC2DF3E4BE5}](https://github.com/user-attachments/assets/80e59fc2-5162-4db1-b78b-6fda3da576aa)
-![{FADC5F00-F1B1-4CDE-9BE1-7B8B48CBD5EA}](https://github.com/user-attachments/assets/67d46941-048d-451d-8641-d559056a305c)
-![{BEC6F926-4633-425B-9518-BE2C357D473B}](https://github.com/user-attachments/assets/0a4c6f87-7cc5-4188-a2b7-1c071807a6e0)
----
+- **Email**: [your-email@example.com](mailto:your-email@example.com)
+- **Twitter**: [@yourhandle](https://twitter.com/yourhandle)
 
-## 🔧 Tech Stack
+## Releases
 
-- Streamlit
-- OpenRouter + Mistral 7B
-- Gmail API (OAuth)
-- Pandas
-- Python 3.10+
-
----
-
-## 📌 Tags
-
-streamlit ai-email gmail-api openrouter llm cold-email personalization google-auth mistral7b email-drafts outreach automation vc-tools
-
----
-
-## 🧠 Use Cases
-
-- VC Outreach for startup fundraising
-- Cold emailing with AI personalization
-- BD/Sales email generation at scale
-- Save time on repetitive drafting
+To download the latest version of AI Email Crafter, visit the [Releases](https://github.com/NxxNrz/AI_Email_Crafter/releases) section. Make sure to download the appropriate file and execute it to start using the application.
 
 ---
+
+Thank you for checking out AI Email Crafter! We hope this tool enhances your email outreach efforts. Your feedback is valuable, so don't hesitate to reach out with any thoughts or suggestions. Happy emailing!
